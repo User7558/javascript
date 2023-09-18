@@ -15,10 +15,13 @@
 
 </head>
 <body>
-  <p>Isso não vale nada.</p>
+  <p>Conteúdo.</p>
 
   <script>
-    var nome = window.prompt('Digite um número')
+    var n1 = Number(window.prompt('Digite um número:')) //string
+    var n2 = Number(window.prompt('Digite outro número: '))
+    var s = n1+n2 
+    window.alert(`A soma entre ${n1} e ${n2} é igual a ${s}!`)
   </script>
 
 </body>
