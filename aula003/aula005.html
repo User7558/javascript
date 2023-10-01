@@ -17,11 +17,15 @@
 <body>
   <h1>Estudos com DOM</h1>
   <p>Um simples site de teste.</p>
-  <p>Nothing fancy</p>
-  <div>Clique-me!</div>
+  <p><i>Nothing fancy</i></p>
+  <div id="msg">Clique-me!</div>
 
   <script>
-    s
+    var p1 = document.getElementsByTagName('p')[0]
+    p1.style.color = 'black'
+    var msg = window.document.getElementById('msg')
+    msg.style.background = 'Blue'
+    msg.innerText = 'Estou alterando tudo!'
   </script>
 
 </body>
