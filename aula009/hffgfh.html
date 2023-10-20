@@ -14,15 +14,15 @@
 
   <script>
       function nacionalidade(){
-        var origem = document.getElementsByName('país')[0].value
-        var resp = document.querySelector('div#resp')
-        resp.innerHTML = `<p>País de origem: <strong>${origem}</strong></p>`
+        var origem = document.getElementsByName('país')[0].value;
+        var resp = document.querySelector('div#resp');
+        resp.innerHTML = `<p>País de origem: <strong>${origem}</strong></p>`;
 
-        if(origem.toUpperCase() !== 'BRASIL'){
-          resp.innerHTML += 'Nacionalidade: <em>ESTRANGEIRO(A)</em>'
+        if (origem.toUpperCase() !== 'BRASIL'){
+          resp.innerHTML += '<p>Nacionalidade: <em>ESTRANGEIRO(A)</em></p>';
         }
         else{
-          resp.innerHTML += 'Nacionalidade: <em>BRASILEIRO(A)</em>'
+          resp.innerHTML += '<p>Nacionalidade: <em>BRASILEIRO(A)</em></p>';
         }
       }
   </script>
